@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "Kotlin Cheatsheet"
-filename: kotlin.md
 permalink: /languages/kotlin/
 ---
 
