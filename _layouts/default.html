@@ -23,7 +23,7 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="nav" class="inner">
-        {% assign sorted_pages = site.pages | sort:"order" %}
+        {% assign sorted_pages = site.html_pages | sort:"order" %}
         {% for page in sorted_pages %}
           <li><a href="{{page.url}}">{{page.title}}</a></li>
         {% endfor %}
