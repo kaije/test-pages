@@ -22,6 +22,12 @@
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
+      <section id="nav" class="inner">
+        {% assign sorted_pages = site.pages | sort:"order" %}
+        {% for node in sorted_pages %}
+          <li><a href="{{node.url}}">{{node.title}}</a></li>
+        {% endfor %}
+      </section>
       <section id="main_content" class="inner">
         {{ content }}
       </section>
