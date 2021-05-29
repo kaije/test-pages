@@ -1,3 +1,4 @@
 theme: jekyll-theme-slate
 title: Dev Cheatsheets
 description: A collection of custom dev references for various tools and workflows.
+production_url : https://kaije.github.io/test-pages
