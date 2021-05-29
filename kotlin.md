@@ -13,3 +13,7 @@ The man sprang from his chair and paced up and down the room in uncontrollable a
 "Then, pray consult," said Holmes, shutting his eyes once more.
 
 "The facts are briefly these: Some five years ago, during a lengthy visit to Warsaw, I made the acquaintance of the well-known adventuress, Irene Adler. The name is no doubt familiar to you."
+
+```bash
+git fetch
+```
