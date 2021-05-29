@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Kotlin Cheatsheet"
-permalink: /test-pages/languages/kotlin/
+permalink: /languages/kotlin/
 ---
 
 The man sprang from his chair and paced up and down the room in uncontrollable agitation. Then, with a gesture of desperation, he tore the mask from his face and hurled it upon the ground. "You are right," he cried; "I am the King. Why should I attempt to conceal it?"
