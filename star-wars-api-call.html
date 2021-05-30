@@ -10,7 +10,7 @@ title: "Test Star Wars API Call"
 
 <script>  
   function getClimateDesc(climate) {
-    return `${planets[i].climate.match(initialVowel) ? "an" : "a" } ${planets[i].climate} climate`;
+    return `${climate.match(initialVowel) ? "an" : "a" } ${climate} climate`;
   }
   
   function fetchTestData() {
