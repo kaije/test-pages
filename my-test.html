@@ -7,15 +7,19 @@ title: "Greetings"
 <div id="my-data"></section>
 
 <script>
-  fetch('http://jsonplaceholder.typicode.com/users')
-  .then(response =>  {
-    return response.json();
-  })
-  .then(users => {
-    let div = document.getElementById('my-data');
-    for (let i = 0; i < 5; i++) {
-      let span = document.createElement("span");
-      span.innerText = users[i].name;
-      div.append(span);      
-    }      
+  function fetchTestData() {
+    fetch('http://jsonplaceholder.typicode.com/users')
+    .then(response =>  {
+      return response.json();
+    })
+    .then(users => {
+      let div = document.getElementById('my-data');
+      for (let i = 0; i < 5; i++) {
+        let span = document.createElement("span");
+        span.innerText = users[i].name;
+        div.append(span);      
+      }      
+  }
+          
+  fetchTestData();
 </script>
