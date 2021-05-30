@@ -1,0 +1,26 @@
+---
+layout: default
+title: "Test Star Wars API Call"
+---
+<h1>Test Star Wars API Call</h1>
+
+<ul id="planets"></ul>
+
+<script>  
+  function fetchTestData() {
+    fetch('https://swapi.dev/api/planets/')
+    .then(response =>  {
+      return response.json().results;
+    })
+    .then(planets => {
+      let ul = document.getElementById('planets');
+      for (let i = 0; i < 5; i++) {
+        let li = document.createElement("li");
+        li.innerText = `${planets[i].name} has a ${planets[i].climate} climate and a population of ${planets[i].population}.`;
+        ul.append(li);      
+      }      
+    });
+  }
+          
+  fetchTestData();  
+</script>
