@@ -10,6 +10,7 @@ title: "Test Star Wars API Call"
 
 <script>  
   function getClimateDesc(climate) {
+    let initialVowel = /^[aeiou].+/i
     return `${ climate.match(initialVowel) ? "an" : "a" } ${ climate } climate`;
   }
   
@@ -27,7 +28,6 @@ title: "Test Star Wars API Call"
       let ul = document.getElementById('planets');
       for (let i = 0; i < planets.length; i++) {
         let li = document.createElement("li");
-        let initialVowel = /^[aeiou].+/i
         li.innerText = `${ planets[i].name } has ${ getClimateDesc(planets[i].climate) } and ${ getPopulationDesc(planets[i].population) }.`;
         ul.append(li);      
       }      
