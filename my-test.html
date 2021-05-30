@@ -14,7 +14,7 @@ title: "Greetings"
       return response.json();
     })
     .then(users => {
-      let li = document.getElementById('userList');
+      let ul = document.getElementById('userList');
       for (let i = 0; i < 5; i++) {
         let listItem = document.createElement("li");
         li.innerText = users[i].name;
