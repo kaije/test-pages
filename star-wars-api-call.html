@@ -10,9 +10,10 @@ title: "Test Star Wars API Call"
   function fetchTestData() {
     fetch('https://swapi.dev/api/planets/')
     .then(response =>  {
-      return response.json().results;
+      return response.json();
     })
-    .then(planets => {
+    .then(data => {
+      let planets = data.results;
       let ul = document.getElementById('planets');
       for (let i = 0; i < 5; i++) {
         let li = document.createElement("li");
