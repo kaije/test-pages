@@ -4,8 +4,6 @@ title: "Test Local Data Retrieval"
 ---
 # Test Local Data Retrieval
 
-<p>Trying out local json data retrieval...</p>
-
 {% for quote in site.data.book-quotes %}
 <figure>
   <p>
