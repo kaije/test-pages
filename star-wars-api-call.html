@@ -13,6 +13,10 @@ title: "Test Star Wars API Call"
     return `${climate.match(initialVowel) ? "an" : "a" } ${climate} climate`;
   }
   
+  function getPopulationDesc(population) {
+    return `${population === "unknown" ? "its population is unknown" : ` a population of ${population}`}`;
+  }
+  
   function fetchTestData() {
     fetch('https://swapi.dev/api/planets/')
     .then(response =>  {
