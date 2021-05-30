@@ -17,7 +17,8 @@ title: "Test Star Wars API Call"
       let ul = document.getElementById('planets');
       for (let i = 0; i < 5; i++) {
         let li = document.createElement("li");
-        li.innerText = `${planets[i].name}'s climate is ${planets[i].climate} and ${ planets[i].population !== "unknown" ? ` a population of ${planets[i].population}` : "its population is unknown"}.`;
+        let initialVowel = /[aeiou].+/i
+        li.innerText = `${planets[i].name} has ${planets[i].climate.match(initialVowel) ? "an" : "a" } ${planets[i].climate} climate and ${ planets[i].population !== "unknown" ? ` a population of ${planets[i].population}` : "its population is unknown"}.`;
         ul.append(li);      
       }      
     });
