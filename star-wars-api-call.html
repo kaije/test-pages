@@ -9,6 +9,10 @@ title: "Test Star Wars API Call"
 <p><small>Data courtesy of <a href="https://swapi.dev/">SWAPI - The Star Wars API</a>.</small></p>
 
 <script>  
+  function getClimateDesc(climate) {
+    return `${planets[i].climate.match(initialVowel) ? "an" : "a" } ${planets[i].climate} climate`;
+  }
+  
   function fetchTestData() {
     fetch('https://swapi.dev/api/planets/')
     .then(response =>  {
@@ -20,7 +24,7 @@ title: "Test Star Wars API Call"
       for (let i = 0; i < planets.length; i++) {
         let li = document.createElement("li");
         let initialVowel = /^[aeiou].+/i
-        li.innerText = `${planets[i].name} has ${planets[i].climate.match(initialVowel) ? "an" : "a" } ${planets[i].climate} climate and ${ planets[i].population !== "unknown" ? ` a population of ${planets[i].population}` : "its population is unknown"}.`;
+        li.innerText = `${planets[i].name} has ${getClimateDesc(planets[i].climate)} and ${ planets[i].population !== "unknown" ? ` a population of ${planets[i].population}` : "its population is unknown"}.`;
         ul.append(li);      
       }      
     });
