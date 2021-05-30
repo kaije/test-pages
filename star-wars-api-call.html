@@ -10,11 +10,11 @@ title: "Test Star Wars API Call"
 
 <script>  
   function getClimateDesc(climate) {
-    return `${climate.match(initialVowel) ? "an" : "a" } ${climate} climate`;
+    return `${ climate.match(initialVowel) ? "an" : "a" } ${ climate } climate`;
   }
   
   function getPopulationDesc(population) {
-    return `${population === "unknown" ? "its population is unknown" : ` a population of ${population}`}`;
+    return `${ population === "unknown" ? "its population is unknown" : ` a population of ${ population }` }`;
   }
   
   function fetchTestData() {
@@ -28,7 +28,7 @@ title: "Test Star Wars API Call"
       for (let i = 0; i < planets.length; i++) {
         let li = document.createElement("li");
         let initialVowel = /^[aeiou].+/i
-        li.innerText = `${planets[i].name} has ${getClimateDesc(planets[i].climate)} and ${ planets[i].population !== "unknown" ? ` a population of ${planets[i].population}` : "its population is unknown"}.`;
+        li.innerText = `${ planets[i].name } has ${ getClimateDesc(planets[i].climate) } and ${ getPopulationDesc(planets[i].population) }.`;
         ul.append(li);      
       }      
     });
