@@ -7,12 +7,12 @@ title: "Test Local Data Retrieval"
 
 {% for quote in site.data.book-quotes %}
 <figure>
-  <blockquote>
+  <p>
     {{ quote.text }}
-    <span>{{ quote.title }} - {{ quote.author }}</span>
-  </blockquote>
+    <br>
+  </p>
   <figcaption>
-    {{ quote.author }}, <cite>{{ quote.title }}</cite>
+    <cite>{{ quote.title }}</cite> by {{ quote.author }}
   </figcaption>
 </figure>
 {% endfor %}
