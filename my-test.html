@@ -4,7 +4,7 @@ title: "Greetings"
 ---
 <p>This is an api test call.</p>
 
-<div id="my-data"></div>
+<ul id="userList"></ul>
 
 <script>
   
@@ -14,11 +14,11 @@ title: "Greetings"
       return response.json();
     })
     .then(users => {
-      let div = document.getElementById('my-data');
+      let li = document.getElementById('userList');
       for (let i = 0; i < 5; i++) {
-        let span = document.createElement("span");
-        span.innerText = users[i].name;
-        div.append(span);      
+        let listItem = document.createElement("li");
+        li.innerText = users[i].name;
+        ul.append(li);      
       }      
     });
   }
