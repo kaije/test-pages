@@ -15,4 +15,5 @@ title: "Test Local Data Retrieval"
     <cite>{{ quote.title }}</cite> by {{ quote.author }}
   </figcaption>
 </figure>
+<hr>
 {% endfor %}
