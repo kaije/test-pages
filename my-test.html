@@ -16,7 +16,7 @@ title: "Greetings"
     .then(users => {
       let ul = document.getElementById('userList');
       for (let i = 0; i < 5; i++) {
-        let listItem = document.createElement("li");
+        let li = document.createElement("li");
         li.innerText = users[i].name;
         ul.append(li);      
       }      
