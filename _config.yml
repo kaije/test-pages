@@ -1,4 +1,4 @@
-theme: jekyll-theme-slate
+remote-theme: jchesterhow/tale
 title: GitHub Pages Trial 
 description: Nothing to see here, just trying out GitHub Pages.
 baseurl: /test-pages
